@@ -1,0 +1,36 @@
+.createPostPage {
+  min-height: 100vh;
+}
+
+.createPostContainer {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.createPostInputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+
+  input {
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .createPostPage {
+    font-size: 115%;
+  }
+
+  .createPostInputContainer {
+    input {
+      padding: 3px 8px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.createCommentContainer {
+  border-top: 1.5px solid rgb(200, 200, 200);
+  padding-top: 35px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .createCommentInputContainer {
+    margin-bottom: 15px;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}
+
+.background-white {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .createCommentContainer {
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    .createCommentInputContainer {
+      font-size: 1.1rem;
+
+      input {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+    }
+  }
+}

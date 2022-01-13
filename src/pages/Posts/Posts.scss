@@ -1,0 +1,53 @@
+.postsPage {
+  min-height: 100vh;
+}
+
+.loadPosts {
+  animation: myAnim 1s ease-in 0s 1 reverse backwards;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  margin: 80px auto 0 auto;
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(-6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .postsPage {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+}

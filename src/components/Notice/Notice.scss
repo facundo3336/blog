@@ -1,0 +1,12 @@
+.noticeContainer {
+  background-color: rgb(251, 105, 105);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid black;
+
+  i {
+    margin-right: 5px;
+  }
+}

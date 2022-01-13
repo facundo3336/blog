@@ -1,0 +1,37 @@
+@use "src/colors";
+@use "sass:map";
+
+.commentContainer {
+  border-left: 1px solid map.get(colors.$backgrounds, "blue");
+  padding-left: 15px;
+  text-align: left;
+
+  button {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    padding: 3px 15px;
+    display: block;
+  }
+
+  .commentName {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .commentContainer {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .commentContainer {
+    .commentName {
+      font-size: 1.1rem;
+    }
+
+    .commentText {
+      font-size: 1.15rem;
+    }
+  }
+}

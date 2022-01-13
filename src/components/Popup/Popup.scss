@@ -1,0 +1,40 @@
+@use "src/colors";
+@use "sass:map";
+
+.popupContainer {
+  background-color: map.get(colors.$backgrounds, "transparentBlue");
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+
+  i:hover {
+    cursor: pointer;
+  }
+}
+
+.popupContent {
+  width: 85%;
+  height: auto;
+  margin: auto auto;
+}
+
+@media screen and (min-width: 768px) {
+  .popupContent {
+    height: 400px;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .popupContent {
+    height: 500px;
+    width: 60%;
+  }
+}

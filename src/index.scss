@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: "Genos", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.sideSpacing {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .sideSpacing {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sideSpacing {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+}

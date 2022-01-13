@@ -1,0 +1,116 @@
+.postDetailPage {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  min-height: 100vh;
+
+  i {
+    font-size: 1.1rem;
+  }
+
+  .postDetailDescription {
+    width: 85%;
+    display: block;
+    margin: 5px auto;
+    margin-bottom: 20px;
+  }
+
+  iframe {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.postDetailImage {
+  width: 300px;
+  height: 180px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px auto;
+}
+
+.postDetailButtonContainer {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.loadDetails {
+  animation: myAnim 1s ease-in 0s 1 reverse backwards;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  margin: 80px auto 0 auto;
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(-6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    max-width: 550px;
+    margin: 20px auto;
+  }
+
+  .postDetailButtonContainer {
+    justify-content: center;
+
+    button {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .postDetailPage {
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    iframe {
+      height: 100%;
+    }
+
+    .postDetailDescription {
+      font-size: 1.1rem;
+    }
+
+    .postDetailImage {
+      height: 280px;
+      width: 430px;
+    }
+  }
+}
